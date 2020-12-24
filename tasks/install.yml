@@ -7,7 +7,7 @@
 
 - name: Install microk8s
   become: yes
-  snap:
+  community.general.snap:
     name: microk8s
     classic: yes
     channel: "{{ microk8s_version }}"
